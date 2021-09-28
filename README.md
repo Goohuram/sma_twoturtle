@@ -1,7 +1,10 @@
 
 cd catkin_ws/src
+
 git clone https://github.com/Goohuram/sma_twoturtle.git
+
 cd ..
+
 catkin_make
 
 
@@ -14,6 +17,7 @@ roslaunch sma_twoturtle amcl_tb0.launch
 roslaunch sma_twoturtle amcl_tb1.launch
 
 rosservice call /tb3_0/request_nomotion_update 
+
 rosservice call /tb3_1/request_nomotion_update
 
 roslaunch sma_twoturtle multi_rviz.launch
